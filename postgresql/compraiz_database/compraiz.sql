@@ -101,7 +101,7 @@ COMMENT ON DATABASE compraiz IS 'Banco de dados compraiz.';
 \qecho Conexão ao banco de dados compraiz:
 \c "dbname=compraiz user=computacao password=raiz"
 
--- Criação do schema "elmasri".
+-- Criação do schema "computacao".
 \qecho
 \qecho Criação e configurando do schema "computacao":
 CREATE SCHEMA computacao AUTHORIZATION computacao;
