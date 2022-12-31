@@ -121,6 +121,8 @@ CREATE OR REPLACE VIEW compraiz.public.dual AS
 
 COMMENT ON VIEW compraiz.public.dual IS 'Simulação da tabela SYS.DUAL do Oracle para manter compatibilidade e sintaxe.';
 
+GRANT SELECT ON public.dual TO PUBLIC;
+
 
 -- =============================================================================
 -- Finalização
