@@ -65,8 +65,8 @@ IS 'Names of regions. Locations are in the countries of these regions.';
 
 COMMENT ON TABLE locations
 IS 'Locations table that contains specific address of a specific office,
-warehouse, and/or production site of a company. Does not store addresses /
-locations of customers. Contains 23 rows; references with the
+warehouse, and/or production site of a company. Does not store
+addresses/locations of customers. Contains 23 rows; references with the
 departments and countries tables.';
 
 COMMENT ON COLUMN locations.location_id
@@ -163,7 +163,7 @@ foreign key to deparment_id column in the departments table.';
 \qecho Creating comments for COUNTRIES table:
 
 COMMENT ON TABLE countries
-IS 'country table. Contains 25 rows. References with locations table.';
+IS 'Country table. Contains 25 rows. References with locations table.';
 
 COMMENT ON COLUMN countries.country_id
 IS 'Primary key of countries table.';
@@ -183,7 +183,7 @@ Foreign key to region_id column in the departments table.';
 \qecho Creating comments for JOBS table:
 
 COMMENT ON TABLE jobs
-IS 'jobs table with job titles and salary ranges. Contains 19 rows.
+IS 'Jobs table with job titles and salary ranges. Contains 19 rows.
 References with employees and job_history table.';
 
 COMMENT ON COLUMN jobs.job_id
@@ -206,8 +206,8 @@ IS 'Maximum salary for a job title.';
 \qecho Creating comments for EMPLOYEES table:
 
 COMMENT ON TABLE employees
-IS 'employees table. Contains 107 rows. References with departments, 
-jobs, job_history tables. Contains a self reference.';
+IS 'Employees table. Contains 107 rows. References with departments, jobs,
+job_history tables. Contains a self reference.';
 
 COMMENT ON COLUMN employees.employee_id
 IS 'Primary key of employees table.';
