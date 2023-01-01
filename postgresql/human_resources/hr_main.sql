@@ -172,5 +172,5 @@ COMMENT ON SCHEMA hr IS 'Human Resources (HR) Schema.';
 \qecho The end!
 \echo
 \echo The End! If you are seeing this message the schema "hr" was successfully
-\echo created. Even so, please check the "hr.log" log file for any errors or
+\echo created. Even so, please check the "hr_main.log" log file for any errors or
 \echo warnings. Thanks!
