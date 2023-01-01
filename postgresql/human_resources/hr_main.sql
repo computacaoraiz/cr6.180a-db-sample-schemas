@@ -45,6 +45,7 @@
 --\set ECHO all
 \set ON_ERROR_STOP on
 \o hr_main.log
+\qecho ****************************** hr_main.sql ******************************
 
 
 -- =============================================================================
@@ -112,6 +113,8 @@ COMMENT ON SCHEMA hr IS 'Human Resources (HR) Schema.';
 -- Schema objects
 -- =============================================================================
 -- Execute hr_cre.sql script:
+\qecho
+\qecho ****************************** hr_cre.sql *******************************
 \i hr_cre.sql
 
 
@@ -119,16 +122,46 @@ COMMENT ON SCHEMA hr IS 'Human Resources (HR) Schema.';
 -- Populate tables
 -- =============================================================================
 -- Execute hr_popul.sql script:
+\qecho
+\qecho ****************************** hr_popul.sql *****************************
 \i hr_popul.sql
+
+
+-- =============================================================================
+-- Create indexes on some tables
+-- =============================================================================
+-- Execute hr_idx.sql script:
+\qecho
+\qecho ****************************** hr_idx.sql *******************************
+\i hr_idx.sql
+
+
+-- =============================================================================
+-- Create procedural objects
+-- =============================================================================
+-- Execute hr_code.sql script:
+\qecho
+\qecho ****************************** hr_code.sql ******************************
+\i hr_code.sql
+
+
+-- =============================================================================
+-- Comments for table and columns
+-- =============================================================================
+-- Execute hr_comnt.sql script:
+\qecho
+\qecho ****************************** hr_comnt.sql *****************************
+\i hr_comnt.sql
 
 
 -- =============================================================================
 -- Finalização
 -- =============================================================================
 \qecho
+\qecho ****************************** hr_main.sql ******************************
+\qecho
 \qecho The end!
 \echo
 \echo The End! If you are seeing this message the schema "hr" was successfully
 \echo created. Even so, please check the "hr.log" log file for any errors or
 \echo warnings. Thanks!
-
